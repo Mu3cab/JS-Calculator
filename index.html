@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./Display.js" type="text/javascript" defer></script>
+    <script src="./Calculator.js" type="text/javascript" defer></script>
+    <script src="./main.js" type="text/javascript" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header id="header">
+        <h1>
+        <strong>
+            Online Calculator     
+        </strong>
+        </h1>
+        <!-- <label class="switch" >
+            <input type="checkbox" id="slider" checked>
+            <span class="slider"></span>
+        </label> -->
+    </header>
+    <main class="container" >
+        <section class="calculator">
+            <section class="display">
+                <div id="last-value"></div>  
+                <div id="current-value"><h4>Welcome!</h4></div>
+            </section>
+            <button onclick="display.clearAll()">AC</button>
+            <button onclick="display.delete()">&larr;</button>
+            <button onclick="display.addSign()" class="sign" value="sign">+/-</button>
+            <button class="operator" value="percent">%</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" value="divide">/</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" value="multiply">*</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" value="sub">-</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button class="operator" value="square">√</button>
+            <button class="operator" value="sum" >+</button>
+            <button class="operator  wide-number" value="equal">=</button>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; | Muscab HS 2023  <br>
+    </footer>
+</body>
+</html>
